@@ -178,6 +178,7 @@ margin-right: auto;
 .hero-button {
   padding: 10px 32px;
   font-family: var(--main-font);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -295,6 +296,7 @@ width: 270px;
 .team-context {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--whitetext-color);
 }
 .team-name {
   font-weight: 500;
@@ -313,7 +315,6 @@ width: 270px;
   margin-bottom: 16px;
 }
 .team-icon{
-  
   display: flex;
   justify-content: center;
 gap: 10PX;
@@ -324,7 +325,7 @@ gap: 10PX;
     width: 44px;
     height: 44px;
   border-radius: 50%;
-   background-color: #f5f4fa;
+   background-color: var(--whitetext-color);
   align-items: center;
   justify-content: center;
 }
@@ -349,19 +350,30 @@ gap: 10PX;
   justify-content: space-between;
     }
 
-.client-item-logo{
+.client-item{
   border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
     height: 92px;
     fill: #afb1b8;
+    background-color: var(--whitetext-color);
+    display: flex;  
+    align-items: center;
+      justify-content: center;
    }
-
-.client-item-logo:hover,
-.client-item-logo:focus{
-  fill: var(--linkcolor);
-  border:1px solid var(--linkcolor);
+.client-item-logo{
+  fill: #AFB1B8;
 }
+     
+.client-item:hover, 
+.client-item:focus {
+  border: 1px solid var(--linkcolor);
+}
+
+.client-item:hover .client-item-logo, 
+.client-item:focus .client-item-logo{
+  fill: var(--linkcolor);
+  }
   
 /* footer */
 .footer {
